@@ -27,17 +27,9 @@ public static void main(String args[]){
             i++;
         }while(!input[i-1].equals("end"));
         int n=i-1;
-        //for(i=0;i<n;i++)
-        //{
-        //inputArray=input[i].split(" ");
-       // }
+      
         for(i=0;i<n;i++)
         {
-           // if(inputArray[i].equals("->"))
-            //{
-             //   pVariable=inputArray[i-1];
-               // startProd=inputArray[i+1];
-            //}
             prodStart=input[i].indexOf('-');
             pVariable=input[i].charAt(prodStart-1);
             if(input[i].charAt(prodStart-1)==input[i].charAt(prodStart+2))
